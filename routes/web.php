@@ -11,6 +11,8 @@ use App\Http\Controllers\JobSeekerController;
 use App\Http\Controllers\EmployerControllerController;
 use App\Http\Controllers\PDFController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ApplicationController;
+
 
 //use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -58,6 +60,10 @@ Route::controller(HomePageController::class)->group(function(){
     Route::get('refresh-captcha',"refreshCapthca")->name("refreshCaptcha");
 });
     Route::get('/download-pdf', [PDFController::class, 'download'])->name('download.pdf');
+Route::get('/', [ApplicationController::class,'home'])->name('home'); // your homepage with popup
+Route::post('/applications', [ApplicationController::class,'store'])->name('applications.store');            // create app + RZP order
+Route::post('/payment/verify', [ApplicationController::class,'verify'])->name('payment.verify');             // verify signature
+Route::get('/applications/{application}/pdf', [ApplicationController::class,'pdf'])->name('applications.pdf'); // stream PDF
 
 Route::post('/jobseeker/store', [JobSeekerController::class, 'store'])->name('jobseeker.store');
 Route::post('/employer/store', [EmployerController::class, 'store'])->name('employer.store');
