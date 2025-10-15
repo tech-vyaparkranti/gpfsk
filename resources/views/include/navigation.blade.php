@@ -6,6 +6,8 @@
                 <img src="https://flagcdn.com/w20/in.png" alt="India Flag">
             </a>
             <a class="skip" href="#main-content">Skip to Main Content</a>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
         </div>
         <div class="right">
             <a href="javascript:void(0)" onclick="changeFontSize(1)">A+</a>
@@ -13,7 +15,10 @@
             <span class="sep">|</span>
             <a href="javascript:void(0)" onclick="setLanguage('en')">English</a>
             <a href="javascript:void(0)" onclick="setLanguage('hi')">हिंदी</a>
+            <div id="google_translate_element" style="display:none;"></div>
+
             <span class="sep">|</span>
+
             <a href="{{ url('/login') }}">Login</a>
         </div>
     </div>
@@ -106,10 +111,15 @@ body { margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,
 }
 
 /* Hide Google toolbar */
+#google_translate_element select {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 3px 6px;
+    color: #333;
+    font-size: 13px;
+}
 .goog-te-banner-frame.skiptranslate { display:none !important; }
-body { top:0 !important; }
-.goog-logo-link, .goog-te-gadget span, .goog-te-gadget-simple img { display:none !important; }
-.goog-te-gadget { height:0; overflow:hidden; }
 </style>
 
 <script>

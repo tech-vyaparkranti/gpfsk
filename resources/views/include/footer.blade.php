@@ -1,128 +1,105 @@
-{{-- Recognitions --}}
+<!-- ✅ GOOGLE FONT -->
+{{-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> --}}
 
-{{-- <section class="recognitions pt-5 pb-4">
-    <div class="custom-container">
-        <div class="site-title pb-3">
-            <h2 class="text-center">Recognitions</h2>
+<!-- ✅ FOOTER START -->
+<footer class="custom-footer">
+    <div class="footer-top">
+        <div class="footer-col">
+            <img src="{{ isset($WebSetting[0]->logo) ? url($WebSetting[0]->logo) : './assets/img/logo4.png' }}" alt="Logo" class="footer-logo">
+            <p class="footer-about">
+                {{ isset($WebSetting[0]->company_name) ? $WebSetting[0]->company_name : 'Our Organization' }} is dedicated to empowering communities 
+                through education, skill development, and rural upliftment programs.
+            </p>
         </div>
-        <div class="recognitions-self swiper">
-            <div class="swiper-wrapper">
-                @if(!empty($Recognitions))
-                @foreach ($Recognitions as $RecoRow)
-                <div class="swiper-slide mb-4">
-                    <div class="destinations-new">
-                        <div class="destinations-inner">
-                            <div style="width:auto;height:150px;overflow:hidden;">
-                            <img src="{{ url($RecoRow->image) }}" class="img-fluid" style="height:100%;width:100%;object-fit:cover;"  alt="Lakshadweep">
-                        </div>
-                            <!-- <span class="destinations-title">Certificate-1</span> -->
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-                @else
-                <div class="swiper-slide mb-4">
-                    <div class="destinations-new">
-                        <div class="destinations-inner">
-                            <img src="assets/img/fssai.png" class="img-fluid" width="300" height="400" alt="India Gate">
-                            <!-- <span class="destinations-title">Certificate-2</span> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide mb-4">
-                    <div class="destinations-new">
-                        <div class="destinations-inner">
-                            <img src="assets/img/ministry.png" class="img-fluid" width="300" height="400" alt="Hawamahal">
-                            <!-- <span class="destinations-title">Certificate-3</span> -->
-                        </div>
-                    </div>
-                </div>
-                @endif
 
-
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
-</section> --}}
-{{-- Recognitions End --}}
-<!-- Footer Section -->
-<footer class="footer-section pt-4 pb-4">
-    <div class="custom-container">
-        <div class="row">
-            <div class="col-md-5 mb-4">
-                <div class="footer-item">
-                    <div class="footer-logo">
-                        <div class="footer-logo-inner">
-                            <img src="{{ isset($WebSetting['0']->logo) ? url($WebSetting['0']->logo) : './assets/img/logo4.png' }}" class="img-fluid"  style="height:70px;width:200px" alt="Travel Job  Farmer Producer Company Limited " >
-                            {{-- <div id="TA_rated501" class="TA_rated"><ul id="JjXmgm" class="TA_links VuYcLdHeKQX"><li id="Vri6iTpTKUC" class="IZw2R90i"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g304551-d15224458-Reviews-The_Luxury_Travel-New_Delhi_National_Capital_Territory_of_Delhi.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a></li></ul></div><script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=501&amp;locationId=15224458&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script> --}}
-                        </div>
-                        <p><b>{{ isset($WebSetting['0']->company_name) ? $WebSetting['0']->company_name : 'Travel Job' }}</b></p>
-                        <ul class="social-media mt-4">
-                <li><a href="{{ isset($WebSetting['0']->facebook) ? $WebSetting['0']->facebook : '/' }}" aria-label="Read more about Travel Job  Farmer Producer Company Limited  facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="{{ isset($WebSetting['0']->twitter) ? $WebSetting['0']->twitter : '/' }}" aria-label="Read more about Travel Job  Farmer Producer Company Limited  Twitter"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="{{ isset($WebSetting['0']->instagram) ? $WebSetting['0']->instagram : '/' }}" aria-label="Read more about Travel Job  Farmer Producer Company Limited  Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="{{ isset($WebSetting['0']->youtube) ? $WebSetting['0']->youtube : '/' }}" aria-label="Read more about Travel Job  Farmer Producer Company Limited  Youtube"><i class="fa-brands fa-youtube"></i></a></li>
-            <a href="{{ route('download.pdf') }}">
-</a>
-          
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li><a href="{{ route('aboutUs') }}">About Us</a></li>
+                <li><a href="{{ route('destinations') }}">Our Services</a></li>
+                <li><a href="{{ route('contactUs') }}">Contact Us</a></li>
+                <li><a href="{{ url('/terms-conditions') }}">Terms & Conditions</a></li>
             </ul>
-                        {{-- <p class="text-center mb-0"><img style="max-width: 100%" src="assets/img/msme.png" alt="Travel Job  Farmer Producer Company Limited " width="100%" height="" /></p> --}}
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="footer-item">
-                    <h5 class="footer-title">Quick Link</h5>
-                    <ul>
-                        <li><a href="{{ route('aboutUs') }}">About Us</a></li>
-                        <li><a href="{{ url('/') }}/terms-conditions">Terms & Conditions</a></li>
-                        {{-- <li><a href="{{ route('shippingDeliverypolicy') }}">Shipping & Delivery Policy</a></li>
-                        <li><a href="{{ route('CancellationRefundPolicy') }}">Cancellation & Refund Policy</a></li> --}}
-                        <!-- <li><a href="{{ url('/') }}/comingsoon">Privacy Policy</a></li> -->
-                        <li><a href="{{ route('destinations') }}">Our Services</a></li>
-                        <li><a href="{{ route('productPage') }}">Profile Submission</a></li>
-                        <!-- <li><a href="{{ route('reportPage') }}">Report</a></li> -->
-                        <!-- <li><a href="{{ route('galleryPages') }}">Event</a></li> -->
-                        {{-- <li><a href="{{ route('blogPage') }}">Blog</a></li> --}}
-                        <li><a href="{{ route('contactUs') }}">Contact Us</a></li>
-                        <li style="margin-top:10px;"> 
-                         <a href="{{ route('download.pdf') }}">
-                                <button type="button" class="btn" style="background:#030358;color:white">EMPLOYER REGISTRATION</button>
-</a>    
-                    
-</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="footer-item">
-                    <h5 class="footer-title">Contact Information</h5>
-                    <div class="footer-contact">
-                        <div class="footer-item pb-3">
-                            <label>Company E-mail:</label>
-                            <p><i class="fa-solid fa-envelope"></i>&nbsp;<a href="mailto:{{ isset($WebSetting['0']->email) ? $WebSetting['0']->email : 'info@TravelJob .com' }}">{{ isset($WebSetting['0']->email) ? $WebSetting['0']->email : 'info@traveljobs.info' }}</a>
-                        </div>
-                        <div class="footer-item pb-3">
-                            <label>Contact No:</label>
-                            <p><i class="fa-solid fa-phone"></i>&nbsp;<a href="tel:{{ isset($WebSetting['0']->mobile) ? $WebSetting['0']->mobile : '+91 964 866 0699' }}">{{ isset($WebSetting['0']->mobile) ? $WebSetting['0']->mobile : '+91 9603774858' }}</a></p>
-                        </div>
-                        <div class="footer-item pb-3">
-                            <label>Address:</label>
-                            
-                            <p><i class="fa-solid fa-location-dot" style="padding-right:10px"></i>{{ isset($WebSetting['0']->address) ? $WebSetting['0']->address : '202 & 203, Manoj Apartments, Anandnagar Colony Khairatabad, Hyderabad 500004' }}</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="footer-contact">
+                <li><i class="fa-regular fa-envelope"></i> <a href="mailto:{{ $WebSetting[0]->email ?? '' }}">{{ $WebSetting[0]->email ?? '' }}</a></li>
+                <li><i class="fa-regular fa-phone"></i> <a href="tel:{{ $WebSetting[0]->mobile ?? '' }}">{{ $WebSetting[0]->mobile ?? '' }}</a></li>
+                <li><i class="fa-regular fa-location-dot"></i> {{ $WebSetting[0]->address ?? '' }}</li>
+            </ul>
+        </div>
+
+        <div class="footer-col social">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="{{ $WebSetting[0]->facebook ?? '#' }}"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="{{ $WebSetting[0]->twitter ?? '#' }}"><i class="fa-brands fa-twitter"></i></a>
+                <a href="{{ $WebSetting[0]->instagram ?? '#' }}"><i class="fa-brands fa-instagram"></i></a>
+                <a href="{{ $WebSetting[0]->youtube ?? '#' }}"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
     </div>
+
+    <!-- ✅ TRUST BAR -->
+    <div class="trust-bar">
+        <p>✅ Secure Website &nbsp; | &nbsp; ✅ Trusted Organization &nbsp; | &nbsp; ✅ Verified Registration</p>
+    </div>
+
+    <!-- ✅ COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>&copy; {{ date('Y') }} {{ $WebSetting[0]->company_name ?? '' }} - All Rights Reserved.</p>
+    </div>
+
+    <!-- ✅ BACK TO TOP BUTTON -->
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 </footer>
-<div class="copyright-section text-center p-3">&copy;
-    <script>
-        document.write(new Date().getFullYear());
-    </script>
-    {{ isset($WebSetting['0']->copyright_txt) ? $WebSetting['0']->copyright_txt : ' All Rights Reserved by TravelJobs ' }}
-    & Developed by <a href="https://vyaparkranti.com/" class="text-white" aria-label="Digital Markating"
-        alt="Vyapar Kranti">Vyapar kranti</a>
-</div><!-- Footer Section End-->
+
+<style>
+    .goog-te-banner-frame,
+    .goog-te-gadget,
+    #google_translate_element,
+    .goog-logo-link,
+    .goog-te-balloon-frame,
+    .VIpgJd-ZVi9od-l4eHX-hSRGPd {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    body {
+        top: 0 !important;
+    }
+</style>
+
+<!-- ✅ FOOTER STYLES -->
+<style>
+.custom-footer{background:#003300;color:#fff;font-family:'Open Sans',sans-serif;margin-top:40px;}
+.footer-top{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;padding:40px 8%;border-bottom:1px solid #044a04;}
+.footer-col{flex:1;min-width:220px;}
+.footer-logo{max-width:200px;margin-bottom:10px;}
+.footer-about{color:#ddd;font-size:14px;line-height:22px;}
+.footer-col h4{margin-bottom:12px;font-size:18px;border-left:4px solid #00e676;padding-left:8px;}
+.footer-links li{list-style:none;margin-bottom:6px;}
+.footer-links a{text-decoration:none;color:#fff;font-size:14px;transition:0.3s;}
+.footer-links a:hover{color:#00e676;padding-left:5px;}
+.footer-contact li{margin-bottom:6px;font-size:14px;color:#ddd;}
+.footer-contact i{margin-right:8px;color:#00e676;}
+.social-links a{display:inline-flex;width:38px;height:38px;border-radius:50%;align-items:center;justify-content:center;background:#005500;margin-right:8px;color:#fff;font-size:16px;transition:0.3s;}
+.social-links a:hover{background:#00e676;color:#003300;}
+.trust-bar{text-align:center;background:#002200;padding:8px;font-size:14px;color:#cfcfcf;}
+.footer-bottom{text-align:center;padding:12px;background:#001a00;font-size:14px;color:#ccc;}
+.back-to-top{position:fixed;bottom:20px;right:20px;background:#00e676;color:#003300;border:none;width:40px;height:40px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:0.3s;}
+.back-to-top:hover{background:#00ff88;}
+
+/* ✅ Responsive */
+@media(max-width:768px){
+    .footer-top{flex-direction:column;text-align:center}
+    .social-links{justify-content:center}
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+<!-- ✅ FOOTER END -->

@@ -5,7 +5,7 @@
 
 <link rel="shortcut icon" href="assets/img/logos.jpeg" type="image/x-icon">
 
-<link href="https://traveljobs.info/" rel="canonical" />
+<link href="" rel="canonical" />
 
  <!-- Site Metas -->
 <title>@yield('title')</title>
