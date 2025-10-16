@@ -58,8 +58,8 @@ class ApplicationController extends Controller
         $applicationNo = sprintf('DSS-%s-%04d', $year, $last);
 
         // Save files
-        $photoPath = $r->file('photo')->store('applications/photo', 'public');
-        $signPath = $r->file('signature')->store('applications/signature', 'public');
+        $photoPath = $r->file('photo')->store('application/photo', 'public');
+        $signPath = $r->file('signature')->store('application/signature', 'public');
 
         // Create application (pending)
         $app = Application::create([
@@ -82,7 +82,7 @@ class ApplicationController extends Controller
 
         // Create Razorpay order
         $api = new Api(config('services.razorpay.key'), config('services.razorpay.secret'));
-        $amountPaise = (int) (config('services.razorpay.reg_fee_inr', env('REG_FEE_INR', 199)) * 100);
+        $amountPaise = (int) (config('services.razorpay.reg_fee_inr', env('REG_FEE_INR', 180)) * 100);
         $order = $api->order->create([
             'receipt' => $app->application_no,
             'amount' => $amountPaise,
@@ -139,7 +139,7 @@ class ApplicationController extends Controller
     {
         abort_unless($application->payment_status === 'paid', 403, 'PDF available after payment.');
 
-        $pdf = PDF::loadView('pdf.application-slip', [
+        $pdf = PDF::loadView('pdfs.application-slip', [
             'app' => $application,
             'logo' => public_path('assets/img/logo.png'), // save your logo here
         ])->setPaper('a4');
