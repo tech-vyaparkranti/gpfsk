@@ -61,8 +61,20 @@ Route::controller(HomePageController::class)->group(function () {
 });
 Route::get('/download-pdf', [PDFController::class, 'download'])->name('download.pdf');
 Route::get('/', [ApplicationController::class, 'home'])->name('home'); // your homepage with popup
+Route::get('/career', [ApplicationController::class, 'Career'])->name('career');
+
+
+
+
+
+
+
+
+
+
+
 Route::post('/applications', [ApplicationController::class, 'store'])->name('applications.store');            // create app + RZP order
-Route::post('/payment/verify', [ApplicationController::class, 'verify'])->name('payment.verify');             // verify signature
+Route::post('/payment/verify', [ApplicationController::class, 'verify'])->name('applications.verify');             // verify signature
 Route::get('/applications/{application}/pdf', [ApplicationController::class, 'pdf'])->name('applications.pdf'); // stream PDF
 
 Route::post('/jobseeker/store', [JobSeekerController::class, 'store'])->name('jobseeker.store');
