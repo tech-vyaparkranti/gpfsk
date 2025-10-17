@@ -43,7 +43,9 @@ use Inertia\Inertia;
 // }]);
 
 Route::controller(HomePageController::class)->group(function () {
-    Route::get("/", "homePage");
+    // Route::get("/", "homePage");
+    Route::get("/", "homePage")->name("homePage");
+
     Route::get("comingsoon", "ComingSoon")->name("ComingSoon");
     Route::get("about-us", "aboutUs")->name("aboutUs");
     Route::get("terms-conditions", "termsConditions")->name("termsConditions");
@@ -73,6 +75,7 @@ Route::get('/career', [ApplicationController::class, 'Career'])->name('career');
 
 
 
+// Route::get('/', [ApplicationController::class, 'home'])->name('home'); // your homepage with popup
 Route::post('/applications', [ApplicationController::class, 'store'])->name('applications.store');            // create app + RZP order
 Route::post('/payment/verify', [ApplicationController::class, 'verify'])->name('applications.verify');             // verify signature
 Route::get('/applications/{application}/pdf', [ApplicationController::class, 'pdf'])->name('applications.pdf'); // stream PDF
@@ -98,3 +101,4 @@ Route::post('/payment/success', [PaymentController::class, 'success'])->name('pa
 // require __DIR__.'/auth.php';
 
 include_once "adminRoutes.php";
+

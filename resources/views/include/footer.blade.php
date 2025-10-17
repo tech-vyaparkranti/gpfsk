@@ -37,11 +37,15 @@
         <div class="footer-col">
             <h4><i class="fa-solid fa-link"></i> Quick Links</h4>
             <ul class="footer-links">
-                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
-                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Our Services</a></li>
-                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
-                <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Terms & Conditions</a></li>
+                <li><a href="{{ route('homePage') }}"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                <li><a href="{{ route('aboutUs') }}"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                {{-- <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Our Services</a></li> --}}
+                <li><a href="{{ route('contactUs') }}"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+                {{-- <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Terms & Conditions</a></li> --}}
+                <li><a href="{{ route('CancellationRefundPolicy') }}"><i class="fa-solid fa-chevron-right"></i> Cancellation & Refund policy</a></li>
+                <li><a href="{{ route('privacyPolicy') }}"><i class="fa-solid fa-chevron-right"></i> Privacy policy</a></li>
+
+
             </ul>
         </div>
 
@@ -52,21 +56,21 @@
                     <span class="contact-label">Company E-mail:</span>
                     <div class="contact-details">
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:{{ $WebSetting[0]->email ?? '' }}">{{ $WebSetting[0]->email ?? '' }}</a>
+                        <a href="mailto:{{ $WebSetting[0]->email ?? 'info@graminparivarfoundation.in' }}">{{ $WebSetting[0]->email ?? 'info@graminparivarfoundation.in' }}</a>
                     </div>
                 </li>
                 <li class="contact-item">
                     <span class="contact-label">Contact No:</span>
                     <div class="contact-details">
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:{{ $WebSetting[0]->mobile ?? '' }}">{{ $WebSetting[0]->mobile ?? '' }}</a>
+                        <a href="tel:{{ $WebSetting[0]->mobile ?? '01169656604' }}">{{ $WebSetting[0]->mobile ?? '01169656604' }}</a>
                     </div>
                 </li>
                 <li class="contact-item">
                     <span class="contact-label">Address:</span>
                     <div class="contact-details">
                         <i class="fa-solid fa-location-dot"></i>
-                        <span>{{ $WebSetting[0]->address ?? '' }}</span>
+                        <span>{{ $WebSetting[0]->address ?? 'BISHUN BIGHA PS IMAMGANJ Pakri Guria Gaya Bihar India 824206' }}</span>
                     </div>
                 </li>
             </ul>

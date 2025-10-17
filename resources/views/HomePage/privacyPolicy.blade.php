@@ -1,99 +1,227 @@
 @extends('layouts.webSite')
-@section('title', 'Privacy Policy')
-@section('content')
-    <div class="information-page-slider">
-        <img src="assets/img/travel-with-landmarks-new.png" alt="TravelJob  Farmer Producer Company Limited " class="img-fluid">
-        <div class="information-content">
-            <h1>Privacy Policy</h1>
-        </div>
-    </div>
-    <div id="about">
-        <div class="default-content pt-5 pb-3">
-            <div class="custom-container">
-                <div class="site-title pb-3">
-                    <h2 class="text-center">Privacy Policy</h2>
-                </div>
-                <div class="midd-content">
-                    <p class="text-justify">This privacy policy (“Policy”) relates to the manner <b>TravelJob  Farmer Producer Company Limited </b> (“we”, “us”, “our”) in which we use, handle and process the data that you provide us in connection with using the products or services we offer. By using this website or by availing goods or services offered by us, you agree to the terms and conditions of this Policy, and consent to our use, storage, disclosure, and transfer of your information or data in the manner described in this Policy.</p>
-                    <p class="text-justify">We are committed to ensuring that your privacy is protected in accordance with applicable laws and regulations. We urge you to acquaint yourself with this Policy to familiarize yourself with the manner in which your data is being handled by us.</p>
-                    <p class="text-justify"><b>TravelJob  Farmer Producer Company Limited </b> may change this Policy periodically and we urge you to check this page for the latest version of the Policy in order to keep yourself updated.</p>
-                    <h3>What data is being collected</h3>
-                    <p class="text-justify">We may collect the following information from you: </p>
-                    <ul>
-                        <li><p class="text-justify">Name</p></li>
-                        <li><p class="text-justify">Contact information including address and email address</p></li>
-                        <li><p class="text-justify">Demographic information or, preferences or interests</p></li>
-                        <li><p class="text-justify">Personal Data or Other information relevant/ required for providing the goods or services to you</p></li>
-                        <li><p class="text-justify">The meaning of Personal Data will be as defined under relevant Indian laws</p></li>
-                    </ul>
-                    <p class="text-justify"><b>Note:</b> Notwithstanding anything under this Policy as required under applicable Indian laws, we will not be storing any credit card, debit card or any other similar card data of yours. Please also note that all data or information collected from you will be strictly in accordance with applicable laws and guidelines.</p>
-                    <h3>What we do with the data we gather</h3>
-                    <p class="text-justify">We require this data to provide you with the goods or services offered by us including but not limited, for the below set out purposes:</p>
-                    <ul>
-                        <li><p class="text-justify">Internal record keeping.</p></li>
-                        <li><p class="text-justify">For improving our products or services.</p></li>
-                        <li><p class="text-justify">For providing updates to you regarding our products or services including any special offers.</p></li>
-                        <li><p class="text-justify">To communicate information to you</p></li>
-                        <li><p class="text-justify">For internal training and quality assurance purposes</p></li>
-                    </ul>
-                    <h3>Who do we share your data with</h3>
-                    <p class="text-justify">We may share your information or data with:</p>
-                    <ul>
-                        <li><p class="text-justify">Third parties including our service providers in order to facilitate the provisions of goods or services to you, carry out your requests, respond to your queries, fulfil your orders or for other operational and business reasons.</p></li>
-                        <li><p class="text-justify">With our group companies (to the extent relevant)</p></li>
-                        <li><p class="text-justify">Our auditors or advisors to the extent required by them for performing their services</p></li>
-                        <li><p class="text-justify">Governmental bodies, regulatory authorities, law enforcement authorities pursuant to our legal obligations or compliance requirements.</p></li>
-                    </ul>
-                    <h3>How we use cookies</h3>
-                    <p class="text-justify">We use "cookies" to collect information and to better understand customer behaviour. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to avail our goods or services to the full extent. We do not control the use of cookies by third parties. The third party service providers have their own privacy policies addressing how they use such information.</p>
-                    <h3>Your rights relating to your data</h3>
-                    <p class="text-justify"><b><i>Right to Review</i> -</b> You can review the data provided by you and can request us to correct or amend such data (to the extent feasible, as determined by us). That said, we will not be responsible for the authenticity of the data or information provided by you.</p>
-                    <p class="text-justify"><b><i>Withdrawal of your Consent</i></b> - You can choose not to provide your data, at any time while availing our goods or services or otherwise withdraw your consent provided to us earlier, in writing to our email ID: <a href="mailto:torna.in@gmail.com">torna.in@gmail.com</a> In the event you choose to not provide or later withdraw your consent, we may not be able to provide you our services or goods.Please note that these rights are subject to our compliance with applicable laws.</p>
-                    <h3>How long will we retain your information or data?</h3>
-                    <p class="text-justify">We may retain your information or data (i) for as long as we are providing goods and services to you; and (ii) as permitted under applicable law, we may also retain your data or information even after you terminate the business relationship with us. However, we will process such information or data in accordance with applicable laws and this Policy.</p>
-                    <h3>Data Security</h3>
-                    <p class="text-justify">We will use commercially reasonable and legally required precautions to preserve the integrity and security of your information and data.</p>
-                    <h3>Queries/ Grievance Officer</h3>
-                    <p class="text-justify">For any queries, questions or grievances about this Policy, please contact us using the contact information provided on this website.</p>  
-                </div>
-                <div class="site-title pt-3 pb-2">
-                    <h2 class="text-center">Cancellation & Refund Policy</h2>
-                </div>
-                <div class="midd-content">
-                    <p class="text-justify">If the tour or any part thereof cannot be conducted due to Force Majeure or Vis Majeure, the Company shall not be responsible to give any refund to you.</p>
-                    <p class="text-justify">If the tour or any part thereof cannot be conducted due to Force Majeure or Vis Majeure, the Company shall not be responsible to give any refund to you. However, at its sole discretion, the Company gives the refund based on various factors like the number of participants, the cancellation policies of suppliers like hoteliers, coach operators, etc. the decision of the Company on the quantum of refund shall be final.</p>
-                    <p class="text-justify">It would take at least minimum of 15 to 45 days to process the refund (if due).</p>
-                    <p class="text-justify">It is clearly understood that there shall be no refund whatsoever if the Client does not or cannot utilize any of the services like hotels, sightseeing, rides, cruises, meals, entrance fees, optional tours etc., due to any reason whatsoever.</p>
-                    <p class="text-justify">Refunds (If any) for amendments and/or cancellations will be paid directly to the Client for booking made directly with the Company by way of NEFT / RTGS / Crossed cheque or by credit card it will be reversed to their credit card account at the discretion of the company. It would at least take 45 days to process refunds.</p>
-                    <p class="text-justify">There is no refund payable for any unutilized services (e.g. meals, entrance fees, optional tours, hotels, transport and sightseeing etc.) for any reason whatsoever.</p>
-                    <p class="text-justify">Any service booked in advance and cancelled as per booking policy, refund will be done in the same mode of payment after deducting cancellation charges and actual bank charges if any for refund. To customer bank account if paid by bank transfer, net banking mode / credit /debit card - reversal to their respective credit card account will be done. This process will take 15 to 45 days to reflect in their account.</p>
-                    <p class="text-justify">Clients have option to keep their refund money in our account and collect credit certificate and utilise the same with 24 months.</p>
-                    <p class="text-justify">Clients have option to keep their refund money in our account and collect credit certificate and utilise the same with 24 months.</p>
-                </div>
-                <div class="site-title pt-3 pb-2">
-                    <h2 class="text-center">Conditions of Travel</h2>
-                </div>
-                <div class="midd-content">
-                    <p class="text-justify">The client will have to strictly follow the Tour Program. There shall be no refund, if the client fails to join the group at the commencement of the tour, or joins the group later or leaves the group before tour ending. It shall be noted that for all purposes, it shall be the responsibility of the client to reach the place of commencement of the tour and register with the representative of the company at the appointed place, date and time.</p>
-                    <p class="text-justify">In case where a client along with his family is compelled to discontinue the tour due to any reason whatsoever including illness, death or loss of any travel documents, no claim shall be entertained for refund of unutilized services. Even if a client is unable to reach the place of commencement of the tour due to any reason whatsoever including loss of baggage or loss of travel documents, his booking shall be treated as "no show" on the tour and 100% cancellation charges will be levied.</p>
-                    <p class="text-justify">If a client avails pre - tour services or part thereof, or the air tickets (if booked under any offer) but fails to join the group for the main tour at the appointed place, or cancels the tour after using the air tickets or pre - tour arrangements or part thereof, it shall be treated as "no show" and there will be no refund whatsoever for the unutilized pre-tour or main tour services.</p>
-                    <p class="text-justify">The company reserves the right to withdraw tour membership of any client whose behaviour is deemed likely to affect the smooth operation of the tour or adversely affect the enjoyment or safety of other passengers and the Company shall be under no liability to any such person.</p>
-                    <p class="text-justify">The immunities provided under this contract shall be available to THE COMPANY's employees, directors, managers, including, Employees and Agents but not to the Independent Contractors selected by the company.</p>
-                    <p class="text-justify">Each of these conditions shall be severable from the other and if any provision be invalid, illegal or unenforceable, the remaining provisions shall nevertheless have full force and effect. No liability on the part of THE COMPANY arising in any way out of the Contract in respect of any tour, holiday, excursion facilities shall exceed the total amount paid or agreed to be paid for the tour holiday, and shall in no case include any consequential, incidental loss or additional expense whatsoever.</p>
-                    <p class="text-justify">It is a condition of Booking that the client takes out a Holiday Insurance – Client may procure travel insurance (optional) at their own cost.</p>
-                    <p class="text-justify">The prices quoted in our website / brochure have been calculated at the rate prevailing at the time of publishing / printing. THE COMPANY reserves the right to amend the prices published in this brochure in case of fuel costs, special/high season charge levied by the suppliers, hike in the airline/rail charges before the date of departure and to surcharge accordingly. The Client must pay for all such increases in price in full before the departure.</p>
-                    <p class="text-justify">If no suit/action is brought against THE COMPANY within 7 days of the last day of the tour, THE COMPANY shall be discharged from all liabilities under/or arising out of this contract and the client shall be deemed to have relinquished/abandoned all his rights under or arising from this contract.</p>
-                    <p class="text-justify">In case of publication of any travel scheme offering any discount or benefit by THE COMPANY, we shall have the sole right to withdraw such a scheme or discount at any time unless a specific assurance of the contrary is published.</p>
+@section('title', 'Privacy Policy • CKKK Gramin Parivar Foundation')
 
-                </div>
-                <div class="site-title pt-3 pb-2">
-                    <h2 class="text-center">Shipping & Delivery Policy</h2>
-                </div>
-                <div class="midd-content">
-                    <p class="text-justify">For International buyers, orders are shipped and delivered through registered international courier companies and/or International speed post only. For domestic buyers, orders are shipped through registered domestic courier companies and /or speed post only. Orders are shipped within 3-5 Days days or as per the delivery date agreed at the time of order confirmation and delivering of the shipment subject to Courier Company / post office norms.</p>
-                    <p class="text-justify"><b>TravelJob  Farmer Producer Company Limited </b> is not liable for any delay in delivery by the courier company / postal authorities and only guarantees to hand over the consignment to the courier company or postal authorities within 3-5 Days days from the date of the order and payment or as per the delivery date agreed at the time of order confirmation. Delivery of all orders will be to the address provided by the buyer. Delivery of our services will be confirmed on your mail ID as specified during registration. For any issues in utilizing our services you may contact our helpdesk on <a href="tel:+919540721363">+91 954 072 1363</a> or <a href="mailto:torna.in@gmail.com">torna.in@gmail.com</a>.</p>
-                </div>
-            </div>
-        </div>
+@section('content')
+{{-- Google Font + AOS --}}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+  :root{
+    --brand-pink:#E91E63; --brand-pink-dark:#c2185b;
+    --brand-green:#2ECC71; --brand-green-dark:#1e8f4e;
+    --ink:#222; --muted:#616161; --bg:#f6f7fb;
+  }
+  body{font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  .hero{position:relative;min-height:300px;display:flex;align-items:center;background:#0d0d0f url('{{ asset('assets/img/policy-hero.jpg') }}') center/cover no-repeat}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(233,30,99,.7),rgba(46,204,113,.55))}
+  .hero .wrap{position:relative;z-index:1;color:#fff;padding:64px 0}
+  .hero .kicker{display:inline-block;background:#fff;color:#111;padding:6px 14px;border-radius:999px;font-weight:700;font-size:.85rem}
+  .hero h1{font-weight:800;letter-spacing:.2px;margin-top:10px}
+  .crumb a{color:#fff;text-decoration:underline}
+
+  .section{padding:56px 0;background:#fff}
+  .section.alt{background:var(--bg)}
+  .h2{font-weight:800;color:var(--ink)}
+  .hr{height:3px;width:74px;background:var(--brand-pink);border-radius:2px;margin:14px 0 26px}
+
+  .card-lite{background:#fff;border-radius:14px;box-shadow:0 10px 28px rgba(0,0,0,.08);padding:24px}
+  .list{margin:0;padding-left:18px}
+  .list li{margin:8px 0}
+  .label{display:inline-block;background:rgba(46,204,113,.12);color:var(--brand-green-dark);padding:6px 12px;border-radius:999px;font-weight:600;margin-bottom:6px}
+  .note{background:#fff7fb;border-left:4px solid var(--brand-pink);padding:12px 14px;border-radius:10px}
+  .cta{background:linear-gradient(120deg,var(--brand-pink),var(--brand-green));color:#fff;border:none;padding:12px 22px;border-radius:10px;font-weight:700}
+  .cta:hover{filter:brightness(.95)}
+</style>
+
+{{-- HERO --}}
+<section class="hero">
+  <div class="custom-container wrap">
+    <span class="kicker">Policy</span>
+    <h1 class="display-6">Privacy Policy</h1>
+    <p class="mt-2 crumb"><a href="{{ url('/') }}">Home</a> · <span>Privacy Policy</span></p>
+  </div>
+</section>
+
+{{-- INTRO --}}
+<section class="section">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Overview · गोपनीयता का सार</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <p><strong>CKKK Gramin Parivar Foundation</strong> (“Trust”, “we”, “our”) respects your privacy. This Privacy Policy explains what data we collect, why we collect it, how we use it and your choices.</p>
+      <p class="hi"><strong>हम आपकी गोपनीयता का सम्मान करते हैं।</strong> यह नीति बताती है कि हम कौन-सा डेटा एकत्र करते हैं, क्यों करते हैं, उसका उपयोग कैसे होता है, और आपके अधिकार क्या हैं।</p>
+      <div class="note mt-2">This policy applies to our website, contact/job forms, and job application fee payments processed via Razorpay.</div>
     </div>
+  </div>
+</section>
+
+{{-- DATA WE COLLECT --}}
+<section class="section alt">
+  <div class="custom-container" data-aos="fade-up">
+    <span class="label">What we collect · हम क्या एकत्र करते हैं</span>
+    <h2 class="h2">Personal Data</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <ul class="list">
+        <li><strong>Contact Form:</strong> Name, Email, Phone, Message.</li>
+        <li class="hi"><strong>संपर्क फॉर्म:</strong> नाम, ईमेल, मोबाइल नंबर, संदेश।</li>
+
+        <li class="mt-1"><strong>Job Application / Payment:</strong> Name, Email, Phone, Address (if asked), resume details (if provided). Payment instrument details are handled by <strong>Razorpay</strong>; we receive only payment status, reference IDs, amounts, and timestamps.</li>
+        <li class="hi"><strong>जॉब आवेदन / भुगतान:</strong> नाम, ईमेल, मोबाइल, पता (यदि पूछा गया), रिज़्यूमे विवरण (यदि दिया गया)। भुगतान की संवेदनशील जानकारी <strong>Razorpay</strong> द्वारा संभाली जाती है; हमें केवल भुगतान स्थिति, संदर्भ आईडी, राशि और समय मिलता है।</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{-- HOW & WHY --}}
+<section class="section">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">How we use data · डेटा का उपयोग</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <ul class="list">
+        <li>To respond to your queries and provide requested information.</li>
+        <li>To process job-related forms and fees, send confirmations, receipts, and important updates.</li>
+        <li>To improve our services, prevent fraud, and ensure platform security.</li>
+
+        <li class="hi">आपके प्रश्नों का उत्तर देने, जॉब-फॉर्म और फीस को संसाधित करने, रसीद/पुष्टिकरण भेजने तथा सुरक्षा सुनिश्चित करने के लिए।</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{-- LEGAL BASIS / CONSENT --}}
+<section class="section alt">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Consent & Lawful Use · सहमति और वैध उपयोग</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <ul class="list">
+        <li>By submitting forms or making a payment, you <strong>consent</strong> to our processing of your information as described here.</li>
+        <li class="hi">किसी भी फॉर्म/भुगतान को सबमिट करके आप यहां वर्णित तरीके से अपने डेटा के उपयोग हेतु <strong>सहमति</strong> देते हैं।</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{-- PAYMENTS / RAZORPAY --}}
+<section class="section">
+  <div class="custom-container" data-aos="fade-up">
+    <span class="label">Payments · Razorpay</span>
+    <h2 class="h2">Payment Security & Data</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <ul class="list">
+        <li>Payments are processed by <strong>Razorpay</strong>. Your card/UPI/bank details are collected and stored by Razorpay as per their security standards (PCI-DSS). We do not store your full payment instrument details on our servers.</li>
+        <li class="hi">भुगतान <strong>Razorpay</strong> के माध्यम से होता है। कार्ड/UPI/बैंक विवरण Razorpay के सुरक्षा मानकों (PCI-DSS) के अनुसार संभाले जाते हैं। हम अपने सर्वर पर आपके पूर्ण भुगतान विवरण सुरक्षित नहीं रखते।</li>
+      </ul>
+      <div class="note mt-2">In case of payment issues (duplicate/failed), please contact us with the transaction reference. (Refunds are governed by our separate <a href="{{ route('CancellationRefundPolicy') }}">Cancellation & Refund Policy</a>.)</div>
+    </div>
+  </div>
+</section>
+
+{{-- COOKIES --}}
+<section class="section alt">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Cookies & Analytics · कुकीज़</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <p>We currently do not use advanced tracking cookies. If analytics (e.g., Google Analytics) are enabled in the future, we will update this section and provide controls where applicable.</p>
+      <p class="hi">वर्तमान में उन्नत ट्रैकिंग कुकीज़ का उपयोग नहीं किया जाता। भविष्य में एनालिटिक्स सक्षम होने पर यह अनुभाग अद्यतन किया जाएगा।</p>
+    </div>
+  </div>
+</section>
+
+{{-- DATA RETENTION --}}
+<section class="section">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Data Retention · डेटा संरक्षण अवधि</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <ul class="list">
+        <li>We retain form and transaction records for as long as needed for legal, accounting or operational purposes.</li>
+        <li class="hi">कानूनी/लेखा/संचालन आवश्यकताओं हेतु रिकॉर्ड उतनी अवधि तक सुरक्षित रखे जाते हैं जितनी आवश्यकता हो।</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{-- SHARING --}}
+<section class="section alt">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Sharing & Third Parties · डेटा साझा करना</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <ul class="list">
+        <li>We do not sell your personal data. We may share minimal data with service providers (e.g., Razorpay, hosting, email) strictly to operate our services.</li>
+        <li>We may disclose information if required by law, regulation, or court order.</li>
+
+        <li class="hi">हम आपका डेटा नहीं बेचते। सेवा संचालन हेतु आवश्यक होने पर सीमित जानकारी विश्वसनीय सेवा प्रदाताओं के साथ साझा की जा सकती है।</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{-- YOUR RIGHTS --}}
+<section class="section">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Your Rights · आपके अधिकार</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <ul class="list">
+        <li>Request access, correction, or deletion of your personal data (subject to lawful limits).</li>
+        <li>Withdraw consent where processing is based on consent (may impact service availability).</li>
+
+        <li class="hi">आप अपने डेटा तक पहुँच/सुधार/हटाने का अनुरोध कर सकते हैं (कानूनी सीमाओं के अधीन)। सहमति-आधारित प्रक्रियाओं से सहमति वापस ले सकते हैं।</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{{-- CHILDREN --}}
+<section class="section alt">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Children’s Privacy · बाल गोपनीयता</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <p>Our website is intended for general audiences. We do not knowingly collect personal data from children under applicable age limits. If you believe a child has provided data, please contact us for removal.</p>
+      <p class="hi">हम बच्चों से जानबूझकर डेटा एकत्र नहीं करते। यदि किसी बालक/बालिका के डेटा का संज्ञान हो, तो कृपया हटाने हेतु हमसे संपर्क करें।</p>
+    </div>
+  </div>
+</section>
+
+{{-- CHANGES --}}
+<section class="section">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Policy Updates · नीति अद्यतन</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated “Last Updated” date.</p>
+      <p class="hi">यह नीति समय-समय पर अद्यतन की जा सकती है। परिवर्तन इसी पृष्ठ पर “Last Updated” के साथ प्रकाशित होंगे।</p>
+      <p class="mt-2"><strong>Last Updated:</strong> {{ date('F d, Y') }}</p>
+    </div>
+  </div>
+</section>
+
+{{-- CONTACT --}}
+<section class="section alt">
+  <div class="custom-container" data-aos="fade-up">
+    <h2 class="h2">Contact · संपर्क</h2>
+    <div class="hr"></div>
+    <div class="card-lite">
+      <p><strong>CKKK Gramin Parivar Foundation (Trust)</strong></p>
+      <p><strong>Address:</strong> <em>BISHUN BIGHA PS IMAMGANJ Pakri Guria Gaya Bihar India 824206</em></p>
+      <p><strong>Email:</strong> <em>info@graminparivarfoundation.in</em> &nbsp; | &nbsp; <strong>Phone:</strong> <em>01169656604</em></p>
+      <div class="mt-3">
+        <a href="{{ route('contactUs') }}" class="cta">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{-- AOS --}}
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>try{AOS.init({ once:true, duration:800, easing:'ease-in-out' });}catch(e){}</script>
 @endsection

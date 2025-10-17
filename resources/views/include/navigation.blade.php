@@ -36,6 +36,10 @@
 
     <nav class="mainnav" id="mainnav">
       <ul>
+        </li>
+        {{-- <li><a class="{{ request()->routeIs('involved') ? 'active' : '' }}" href="">Our Services</a></li> --}}
+        <li><a class="{{ request()->routeIs('contactUs') ? 'active' : '' }}" href="{{ route('contactUs') }}">Contact
+            Us</a></li>
         <li><a class="{{ request()->routeIs('home') ? 'active' : '' }}" href="">Home</a></li>
         <li><a class="{{ request()->routeIs('about') ? 'active' : '' }}" href="">About Us</a></li>
         <li><a class="{{ request()->routeIs('involved') ? 'active' : '' }}" href="">Our Services</a></li>

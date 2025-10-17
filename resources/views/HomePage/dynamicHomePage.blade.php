@@ -809,7 +809,7 @@
     });
   </script>
 
-  <div id="applyPopup" class="popup-overlay">
+  {{-- <div id="applyPopup" class="popup-overlay">
     <div class="popup-box">
       <button class="close-btn" onclick="closeApplyForm()">✖</button>
       <h3 class="popup-title"><i class="fa-solid fa-chalkboard-user"></i> Digital Siksha Sarthi – Registration</h3>
@@ -938,7 +938,7 @@
         </div>
       </form>
     </div>
-  </div>
+  </div> --}}
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
