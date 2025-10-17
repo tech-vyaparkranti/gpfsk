@@ -36,10 +36,10 @@
 
     <nav class="mainnav" id="mainnav">
       <ul>
-        <li><a class="{{ request()->routeIs('home') ? 'active' : '' }}" href="">Home</a></li>
-        <li><a class="{{ request()->routeIs('about') ? 'active' : '' }}" href="">About Us</a></li>
-        <li><a class="{{ request()->routeIs('involved') ? 'active' : '' }}" href="">Our Services</a></li>
-        <li><a class="{{ request()->routeIs('media') ? 'active' : '' }}" href="">Contact Us</a></li>
+        <li><a class="{{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('homePage') }}">Home</a></li>
+        <li><a class="{{ request()->routeIs('aboutUs') ? 'active' : '' }}" href="{{ route('aboutUs') }}">About Us</a></li>
+        {{-- <li><a class="{{ request()->routeIs('involved') ? 'active' : '' }}" href="">Our Services</a></li> --}}
+        <li><a class="{{ request()->routeIs('contactUs') ? 'active' : '' }}" href="{{ route('contactUs') }}">Contact Us</a></li>
         <!-- <li><a class="{{ request()->routeIs('discussions') ? 'active' : '' }}" href=""></a></li>
         <li><a class="{{ request()->routeIs('contact') ? 'active' : '' }}" href="">Contact Us</a></li> -->
       </ul>
