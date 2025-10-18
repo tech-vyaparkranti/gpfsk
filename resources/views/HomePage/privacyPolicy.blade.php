@@ -212,7 +212,7 @@
     <div class="hr"></div>
     <div class="card-lite">
       <p><strong>CKKK Gramin Parivar Foundation (Trust)</strong></p>
-      <p><strong>Address:</strong> <em>BISHUN BIGHA PS IMAMGANJ Pakri Guria Gaya Bihar India 824206</em></p>
+      <p><strong>Address:</strong> <em>Noida-Greater Noida Expy, Sector 135, Noida, Uttar Pradesh 201304</em></p>
       <p><strong>Email:</strong> <em>info@graminparivarfoundation.in</em> &nbsp; | &nbsp; <strong>Phone:</strong> <em>01169656604</em></p>
       <div class="mt-3">
         <a href="{{ route('contactUs') }}" class="cta">Contact Us</a>

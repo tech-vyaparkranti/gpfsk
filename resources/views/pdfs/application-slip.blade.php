@@ -19,43 +19,40 @@
       position: relative;
     }
 
-    .header {
-      text-align: center;
-      margin-bottom: 12px;
-      position: relative;
-    }
+    /* ===== HEADER SECTION ===== */
+.header {
+    border: 1px solid #5a8f45;
+    background: #e8f5e9;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+}
 
-    .header img.logo {
-      height: 60px;
-      width: 60px;
-      vertical-align: middle;
-    }
+.logo {
+    height: 85px;
+    width: auto;
+}
 
-    .header-title {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 10px;
-      text-align: left;
-    }
+.org-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0d7d3f;
+    margin: 0;
+    text-transform: uppercase;
+}
 
-    .header-title h1 {
-      font-size: 18px;
-      color: #0d7d3f;
-      font-weight: bold;
-      margin: 0;
-    }
+.subtitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2b6b2b;
+}
 
-    .header-title .subtitle {
-      font-size: 11px;
-      color: #0d7d3f;
-      margin: 2px 0;
-    }
+.slogan {
+    font-size: 12px;
+    font-style: italic;
+    color: #444;
+}
 
-    .header-title .org {
-      font-size: 9px;
-      color: #666;
-      font-style: italic;
-    }
+
 
     .document-title {
       text-align: center;
@@ -140,10 +137,8 @@
       margin-bottom: 4px;
     }
 
-    .photo-box img {
-      max-width: 98px;
-      max-height: 118px;
-    }
+    .photo-box img { width: 100%; height: 100%; object-fit: cover; }
+
 
     .details-with-photo {
       position: relative;
@@ -170,27 +165,27 @@
     }
 
     .signature-box {
-      border: 1px solid #ccc;
-      height: 60px;
-      text-align: right;
-      padding: 5px;
-      background: #fff;
-      position: relative;
-    }
+    border: 1px solid #000;
+    height: 140px;
+    width: 350px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
 
-    .signature-box img {
-      max-height: 50px;
-      position: absolute;
-      right: 10px;
-      bottom: 5px;
-    }
-
-    .signature-label {
-      font-size: 9px;
-      color: #666;
-      text-align: center;
-      margin-top: 2px;
-    }
+.signature-box img {
+    width: 330px !important;   /* Force width */
+    height: 120px !important;  /* Force height */
+    object-fit: contain;       /* Maintain proportion */
+}
+.signature-label {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 5px;
+    font-weight: bold;
+}
 
     .footer-table {
       width: 100%;
@@ -230,18 +225,34 @@
   @endif
 
   {{-- Header --}}
-  <div class="header">
+  {{-- <div class="header">
     <img src="{{ $logoPath }}" class="logo" alt="logo">
     <div class="header-title">
       <h1>Digital Siksha Sarthi Recruitment</h1>
       <div class="subtitle">A Project Of CKKK Gramin Parivar Foundation</div>
       <!-- <div class="org">(HRDB is Division of Social welfare organization "NAC India")</div> -->
     </div>
-  </div>
+  </div> --}}
+
+  <div class="header">
+  <table width="100%">
+    <tr>
+      <td width="15%" style="text-align:center;">
+        <img src="{{ $logoPath }}" class="logo" alt="logo">
+      </td>
+      <td width="85%" style="text-align:center;">
+        <h1 class="org-title">CKKK Gramin Parivar Foundation</h1>
+        <div class="subtitle">A Rural Skill & Employment Development Trust</div>
+        {{-- <div class="slogan">“सहयोग से सफलता तक”</div> --}}
+      </td>
+    </tr>
+  </table>
+</div>
+
 
   {{-- Document Title --}}
   <div class="document-title">
-    Digital Siksha Sarthi Recruitment / डिजिटल शिक्षा सारथी भर्ती - 2025
+    Digital Siksha Sarthi Recruitment
 
   </div>
 
@@ -256,7 +267,7 @@
   </div>
 
   <div style="margin-bottom: 8px;">
-    <strong style="color: #0d7d3f;">Post Applied for : Block Supervisor Cum Panchayat Executive Recruitment</strong>
+    <strong style="color: #0d7d3f;">Post Applied for : Teacher</strong>
     <div style="float: right; color: #0066cc; font-weight: 600;">
       Application No. : {{ $app->application_no }}
     </div>

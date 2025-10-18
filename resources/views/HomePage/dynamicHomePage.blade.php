@@ -772,7 +772,7 @@
           If you believe in empowering youth through digital literacy and want to contribute to building a smarter India,
           join us now.
         </p>
-        <button class="apply-btn" onclick="openApplyForm()">Apply Now</button>
+<a class="apply-btn" href="{{ url('/career') }}">Apply Now</a>
       </div>
       <div class="dss-image swiper mySwiper">
         <div class="swiper-wrapper">
