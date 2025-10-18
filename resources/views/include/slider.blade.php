@@ -150,7 +150,7 @@ if (!empty($slider[0]->slider_title) || !empty($slider[0]->slider_image)) {
   .swiper-slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
 
   .video-block,

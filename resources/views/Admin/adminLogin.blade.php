@@ -129,19 +129,19 @@
               <form id="formAuthentication" class="mb-3" action="{{ route('AdminLogin') }}" method="POST">
                 @csrf
                 @if (session('error'))
-                    <div class="alert alert-danger">
-                        {{ session('error') }}
-                    </div>
+                  <div class="alert alert-danger">
+                      {{ session('error') }}
+                  </div>
                 @endif
 
                 @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
+                  <div class="alert alert-danger">
+                      <ul>
+                          @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                          @endforeach
+                      </ul>
+                  </div>
                 @endif
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>

@@ -1,5 +1,5 @@
 @extends('layouts.webSite')
-@section('title', 'TravelJobs')
+@section('title', 'Gramin Parivar Foundation')
 
 @section('content')
   @include('include.slider')
@@ -23,7 +23,7 @@
 
     .section-wrapper {
       width: 90%;
-      max-width: 1200px;
+      max-width: 1300px;
       margin: 60px auto;
       padding: 0 15px;
     }
@@ -702,8 +702,12 @@
         <img src="{{ asset('assets/img/getour1.png') }}" alt="Education & Skill Development">
         <div class="section-card-content">
           <h3>Education & Skill Development</h3>
-          <p>Providing access to quality education, digital learning, and vocational training for youth.</p>
-          <a href="#">Read More</a>
+          <p style="text-align: justify;"> We provide quality education, digital learning, and vocational training to
+            equip youth with practical skills and knowledge. Our goal is to bridge the gap between education and industry,
+            preparing them for future
+            opportunities.
+          </p>
+          <!-- <a href="#">Read More</a> -->
         </div>
       </div>
 
@@ -711,8 +715,16 @@
         <img src="{{ asset('assets/img/women.png') }}" alt="Women Empowerment">
         <div class="section-card-content">
           <h3>Women Empowerment</h3>
-          <p>Encouraging self-reliance, skill development, and entrepreneurship among women.</p>
-          <a href="#">Read More</a>
+          <p style="text-align: justify">
+            Empowering women through education, vocational training, and entrepreneurial guidance to foster independence
+            and confidence.
+            Our programs aim to create equal opportunities, promote leadership skills, and support women in achieving
+            their personal and professional goals.
+
+          </p>
+
+          </p>
+          <!-- <a href="#">Read More</a> -->
         </div>
       </div>
 
@@ -720,8 +732,13 @@
         <img src="{{ asset('assets/img/senior.png') }}" alt="Senior Citizen Assistance">
         <div class="section-card-content">
           <h3>Senior Citizen Assistance</h3>
-          <p>Providing health, social, and administrative support to improve senior citizens' quality of life.</p>
-          <a href="#">Read More</a>
+          <p style="text-align: justify;">
+            Providing comprehensive support to senior citizens through healthcare, social engagement, and administrative
+            assistance.
+            Our programs aim to enhance their independence, well-being, and overall quality of life.
+          </p>
+
+          <!-- <a href="#">Read More</a> -->
         </div>
       </div>
 
@@ -729,8 +746,12 @@
         <img src="{{ asset('assets/img/employeement.png') }}" alt="Employment / Entrepreneurship">
         <div class="section-card-content">
           <h3>Employment / Entrepreneurship</h3>
-          <p>Creating opportunities through business skill training and job placement programs.</p>
-          <a href="#">Read More</a>
+          <p style="text-align: justify;">
+            Empowering individuals with practical skills, entrepreneurship guidance, and career support to create
+            meaningful job opportunities.
+            Our programs help people launch businesses or excel in their chosen careers with confidence.
+          </p>
+          <!-- <a href="#">Read More</a> -->
         </div>
       </div>
     </div>
@@ -788,7 +809,7 @@
     });
   </script>
 
-  <div id="applyPopup" class="popup-overlay">
+  {{-- <div id="applyPopup" class="popup-overlay">
     <div class="popup-box">
       <button class="close-btn" onclick="closeApplyForm()">✖</button>
       <h3 class="popup-title"><i class="fa-solid fa-chalkboard-user"></i> Digital Siksha Sarthi – Registration</h3>
@@ -913,11 +934,11 @@
 
         <div class="popup-buttons">
           <button type="submit" class="submit-btn"><i class="fa-solid fa-indian-rupee-sign"></i> Apply & Pay
-            ₹{{ env('REG_FEE_INR', 199) }}</button>
+            ₹{{ env('REG_FEE_INR', 180) }}</button>
         </div>
       </form>
     </div>
-  </div>
+  </div> --}}
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
@@ -1044,7 +1065,7 @@
 
             try {
               // 3. Verify payment
-              const verify = await fetch("{{ route('payment.verify') }}", {
+              const verify = await fetch("{{ route('applications.verify') }}", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
