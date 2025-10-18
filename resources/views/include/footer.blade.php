@@ -165,6 +165,14 @@
         z-index: 1;
         max-width: 1400px;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 80px 5% 40px;
+        position: relative;
+        z-index: 1;
+        max-width: 1400px;
+        margin: 0 auto;
     }
 
     .footer-col {
@@ -195,6 +203,14 @@
     }
 
     .footer-logo {
+        max-width: 180px;
+        margin-bottom: 20px;
+        filter: drop-shadow(0 4px 8px rgba(0, 230, 118, 0.3));
+        transition: transform 0.3s ease;
+    }
+
+    .footer-logo:hover {
+        transform: scale(1.05);
         max-width: 180px;
         margin-bottom: 20px;
         filter: drop-shadow(0 4px 8px rgba(0, 230, 118, 0.3));
