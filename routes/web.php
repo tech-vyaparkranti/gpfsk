@@ -44,7 +44,9 @@ use Inertia\Inertia;
 
 Route::controller(HomePageController::class)->group(function () {
     // Route::get("/", "homePage");
-    Route::get("/", "homePage")->name("homePage");
+    // Route::get("/", action: "homePage")->name("homePage");
+    Route::get("/", action: "homePage")->name("homePage");
+
 
     Route::get("comingsoon", "ComingSoon")->name("ComingSoon");
     Route::get("about-us", "aboutUs")->name("aboutUs");
@@ -64,6 +66,7 @@ Route::controller(HomePageController::class)->group(function () {
 Route::get('/download-pdf', [PDFController::class, 'download'])->name('download.pdf');
 // Route::get('/', [ApplicationController::class, 'home'])->name('home'); // your homepage with popup
 Route::get('/career', [ApplicationController::class, 'Career'])->name('career');
+
 
 
 

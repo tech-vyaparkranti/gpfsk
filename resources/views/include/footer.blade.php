@@ -42,8 +42,10 @@
                 {{-- <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Our Services</a></li> --}}
                 <li><a href="{{ route('contactUs') }}"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
                 {{-- <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Terms & Conditions</a></li> --}}
-                <li><a href="{{ route('CancellationRefundPolicy') }}"><i class="fa-solid fa-chevron-right"></i> Cancellation & Refund policy</a></li>
-                <li><a href="{{ route('privacyPolicy') }}"><i class="fa-solid fa-chevron-right"></i> Privacy policy</a></li>
+                <li><a href="{{ route('CancellationRefundPolicy') }}"><i class="fa-solid fa-chevron-right"></i>
+                        Cancellation & Refund policy</a></li>
+                <li><a href="{{ route('privacyPolicy') }}"><i class="fa-solid fa-chevron-right"></i> Privacy policy</a>
+                </li>
 
 
             </ul>
@@ -56,14 +58,16 @@
                     <span class="contact-label">Company E-mail:</span>
                     <div class="contact-details">
                         <i class="fa-solid fa-envelope"></i>
-                        <a href="mailto:{{ $WebSetting[0]->email ?? 'info@graminparivarfoundation.in' }}">{{ $WebSetting[0]->email ?? 'info@graminparivarfoundation.in' }}</a>
+                        <a href="mailto:{{ $WebSetting[0]->email ?? 'info@graminparivarfoundation.in' }}">{{
+                            $WebSetting[0]->email ?? 'info@graminparivarfoundation.in' }}</a>
                     </div>
                 </li>
                 <li class="contact-item">
                     <span class="contact-label">Contact No:</span>
                     <div class="contact-details">
                         <i class="fa-solid fa-phone"></i>
-                        <a href="tel:{{ $WebSetting[0]->mobile ?? '01169656604' }}">{{ $WebSetting[0]->mobile ?? '01169656604' }}</a>
+                        <a
+                            href="tel:{{ $WebSetting[0]->mobile ?? '01169656604' }}">{{ $WebSetting[0]->mobile ?? '01169656604' }}</a>
                     </div>
                 </li>
                 <li class="contact-item">
@@ -161,6 +165,14 @@
         z-index: 1;
         max-width: 1400px;
         margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 80px 5% 40px;
+        position: relative;
+        z-index: 1;
+        max-width: 1400px;
+        margin: 0 auto;
     }
 
     .footer-col {
@@ -191,6 +203,14 @@
     }
 
     .footer-logo {
+        max-width: 180px;
+        margin-bottom: 20px;
+        filter: drop-shadow(0 4px 8px rgba(0, 230, 118, 0.3));
+        transition: transform 0.3s ease;
+    }
+
+    .footer-logo:hover {
+        transform: scale(1.05);
         max-width: 180px;
         margin-bottom: 20px;
         filter: drop-shadow(0 4px 8px rgba(0, 230, 118, 0.3));
