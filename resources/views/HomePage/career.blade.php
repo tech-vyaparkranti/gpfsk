@@ -8,7 +8,7 @@
 @section('content')
     <style>
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 40px auto;
             background: white;
             padding: 0px;
@@ -187,20 +187,20 @@
                 </tr>
                 <tr>
                     <td class="label">Application Begins<br>आवेदन आरम्भ</td>
-                    <td class="value">05.04.2024<br><strong>05.04.2024</strong></td>
+                    <td class="value">20.10.2025<br><strong>20.10.2025</strong></td>
                 </tr>
                 <tr>
                     <td class="label">Last Date of<br>Application<br>आवेदन की<br>अंतिम तिथि</td>
-                    <td class="value">25.04.2024<br><strong>25.04.2024</strong></td>
+                    <td class="value">20.11.2025<br><strong>20.11.2025</strong></td>
                 </tr>
-                <tr>
+                {{-- <tr>
                     <td class="label">Last Date till<br>Received<br>प्राप्त होने की<br>अंतिम तिथि</td>
                     <td class="value">27.05.2024<br><strong>27.05.2024</strong></td>
                 </tr>
                 <tr>
                     <td class="label">Free Age Last<br>Date<br>निःशुल्क आयु अंतिम<br>तिथि</td>
                     <td class="value">31.05.2024<br><strong>31.05.2024</strong></td>
-                </tr>
+                </tr> --}}
                 <tr>
                     <td class="label">Additional<br>Information<br>अतिरिक्त जानकारी</td>
                     <td class="value">Apply Only at the Official Website of Employment<br><strong>केवल रोजगार की
@@ -400,6 +400,12 @@
             }
         }
 
+        #photoPreview, #signaturePreview {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    object-fit: cover;
+}
+
+
         .note-box {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
@@ -413,8 +419,8 @@
     </style>
     <div class="container">
         <div class="header">
-            <h1>Block Supervisor Cum Panchayat Executive Recruitment</h1>
-            <p>पर्यवेक्षक सह पंचायत कार्यपालक भर्ती आवेदन पत्र 2024</p>
+            <h1>Digital Siksha Sarthi Teacher Recruitment </h1>
+            <p>डिजिटल शिक्षा सारथी भर्ती आवेदन पत्र 2025</p>
         </div>
 
         <form class="form-content" id="recruitmentForm" enctype="multipart/form-data">
@@ -484,20 +490,22 @@
             </div>
 
             <div class="form-row">
-                <div class="form-group full-width">
-                    <label>Attach Photograph (फ़ोटो संलग्न करें) <span class="required">*</span></label>
-                    <input type="file" name="photo" accept="image/*" required>
-                    <div class="file-info">Maximum file size: 2MB. Formats: JPG, PNG</div>
-                </div>
-            </div>
+    <div class="form-group full-width">
+        <label>Attach Photograph (फ़ोटो संलग्न करें) <span class="required">*</span></label>
+        <input type="file" name="photo" id="photoInput" accept="image/*" required>
+        <div class="file-info">Maximum file size: 2MB. Formats: JPG, PNG</div>
+        <img id="photoPreview" src="" alt="Photo Preview" style="margin-top:10px; display:none; width:100px; height:100px; border:2px solid #ddd; border-radius:5px;">
+    </div>
+</div>
 
-            <div class="form-row">
-                <div class="form-group full-width">
-                    <label>Attach Signature (हस्ताक्षर संलग्न करें) <span class="required">*</span></label>
-                    <input type="file" name="signature" accept="image/*" required>
-                    <div class="file-info">Maximum file size: 2MB. Formats: JPG, PNG</div>
-                </div>
-            </div>
+           <div class="form-row">
+    <div class="form-group full-width">
+        <label>Attach Signature (हस्ताक्षर संलग्न करें) <span class="required">*</span></label>
+        <input type="file" name="signature" id="signatureInput" accept="image/*" required>
+        <div class="file-info">Maximum file size: 2MB. Formats: JPG, PNG</div>
+        <img id="signaturePreview" src="" alt="Signature Preview" style="margin-top:10px; display:none; width:200px; height:80px; border:2px solid #ddd; border-radius:5px;">
+    </div>
+</div>
 
             <div class="form-row">
                 <div class="form-group">
@@ -864,6 +872,29 @@
             e.target.value = value;
         });
     </script>
+
+    <script>
+    // Preview Photo
+    document.getElementById('photoInput').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        const preview = document.getElementById('photoPreview');
+        if (file) {
+            preview.src = URL.createObjectURL(file);
+            preview.style.display = 'block';
+        }
+    });
+
+    // Preview Signature
+    document.getElementById('signatureInput').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        const preview = document.getElementById('signaturePreview');
+        if (file) {
+            preview.src = URL.createObjectURL(file);
+            preview.style.display = 'block';
+        }
+    });
+</script>
+
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script>
         document.getElementById('recruitmentForm').addEventListener('submit', async function (e) {
@@ -874,9 +905,10 @@
                 const response = await fetch('{{ route("applications.store") }}', {
                     method: 'POST',
                     body: formData,
-                    headers: {
-                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
-                    }
+                   headers: {
+    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+    'X-Requested-With': 'XMLHttpRequest'
+}
                 });
 
                 const result = await response.json();

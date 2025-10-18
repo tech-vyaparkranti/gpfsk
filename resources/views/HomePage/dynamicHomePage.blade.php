@@ -1065,7 +1065,7 @@
 
             try {
               // 3. Verify payment
-              const verify = await fetch("{{ route('payment.verify') }}", {
+              const verify = await fetch("", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

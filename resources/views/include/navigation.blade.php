@@ -38,12 +38,12 @@
       <ul>
         </li>
         {{-- <li><a class="{{ request()->routeIs('involved') ? 'active' : '' }}" href="">Our Services</a></li> --}}
-        <li><a class="{{ request()->routeIs('contactUs') ? 'active' : '' }}" href="{{ route('contactUs') }}">Contact
-            Us</a></li>
-        <li><a class="{{ request()->routeIs('home') ? 'active' : '' }}" href="">Home</a></li>
-        <li><a class="{{ request()->routeIs('about') ? 'active' : '' }}" href="">About Us</a></li>
-        <li><a class="{{ request()->routeIs('involved') ? 'active' : '' }}" href="">Our Services</a></li>
-        <li><a class="{{ request()->routeIs('media') ? 'active' : '' }}" href="">Contact Us</a></li>
+        {{-- <li><a class="{{ request()->routeIs('contactUs') ? 'active' : '' }}" href="{{ route('contactUs') }}">Contact --}}
+            {{-- Us</a></li> --}}
+         <li><a class="{{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('homePage') }}">Home</a></li>
+        <li><a class="{{ request()->routeIs('aboutUs') ? 'active' : '' }}" href="{{ route('aboutUs') }}">About Us</a></li>
+        {{-- <li><a class="{{ request()->routeIs('involved') ? 'active' : '' }}" href="">Our Services</a></li> --}}
+        <li><a class="{{ request()->routeIs('contactUs') ? 'active' : '' }}" href="{{ route('contactUs') }}">Contact Us</a></li>
         <li style="background:green; border-radius:10px;">
           <a href="{{ url('/career') }}" style="color:white; display:block; text-decoration:none;border-radius:10px"
             onmouseover="this.style.color='white'; this.style.background='green';"

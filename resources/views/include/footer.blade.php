@@ -37,7 +37,7 @@
         <div class="footer-col">
             <h4><i class="fa-solid fa-link"></i> Quick Links</h4>
             <ul class="footer-links">
-                <li><a href="{{ route('homePage') }}"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i> Home</a></li>
                 <li><a href="{{ route('aboutUs') }}"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
                 {{-- <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Our Services</a></li> --}}
                 <li><a href="{{ route('contactUs') }}"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>

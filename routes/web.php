@@ -62,7 +62,7 @@ Route::controller(HomePageController::class)->group(function () {
     Route::get('refresh-captcha', "refreshCapthca")->name("refreshCaptcha");
 });
 Route::get('/download-pdf', [PDFController::class, 'download'])->name('download.pdf');
-Route::get('/', [ApplicationController::class, 'home'])->name('home'); // your homepage with popup
+// Route::get('/', [ApplicationController::class, 'home'])->name('home'); // your homepage with popup
 Route::get('/career', [ApplicationController::class, 'Career'])->name('career');
 
 
@@ -101,4 +101,3 @@ Route::post('/payment/success', [PaymentController::class, 'success'])->name('pa
 // require __DIR__.'/auth.php';
 
 include_once "adminRoutes.php";
-

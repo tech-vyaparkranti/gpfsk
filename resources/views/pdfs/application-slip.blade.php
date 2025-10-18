@@ -233,7 +233,7 @@
   <div class="header">
     <img src="{{ $logoPath }}" class="logo" alt="logo">
     <div class="header-title">
-      <h1>Digital Siksha Sarthi Recruitment / डिजिटल शिक्षा सारथी भर्ती - 2025</h1>
+      <h1>Digital Siksha Sarthi Recruitment</h1>
       <div class="subtitle">A Project Of CKKK Gramin Parivar Foundation</div>
       <!-- <div class="org">(HRDB is Division of Social welfare organization "NAC India")</div> -->
     </div>
